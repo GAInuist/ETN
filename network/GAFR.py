@@ -117,7 +117,7 @@ class GAFR(nn.Module):
         self.aggregator = Aggregator(dim=attr_num, seg=seg)
 
     def get_qkv(self, q, k, v):
-        s, k, v = self.norm_q(q), self.norm_k(k), self.norm_v(v)
+        q, k, v = self.norm_q(q), self.norm_k(k), self.norm_v(v)
         q, k, v = (
             self.proj_q(q),
             self.proj_k(k),
