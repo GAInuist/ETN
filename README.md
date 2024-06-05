@@ -1,7 +1,7 @@
 # ETN
 
 ### Achitecture
-![](framework.pdf)                    
+![](framework/framework.pdf)                    
 
 ### Preparing Dataset and Model
 
